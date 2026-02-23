@@ -1,0 +1,917 @@
+ID,prompt,Answer
+1,"A police officer carries out hundreds of traffic stops every year. When his supervisor is reviewing the officer’s records for the past year, he notices that the officer is equally likely to stop people of various genders, ages, and races. However, he is significantly more likely to write tickets for middle-aged white males with dark hair and eyes. When confronted with this fact, the officer truthfully states that he has no idea why that is, and that it must simply be a coincidence. Unbeknownst to the officer, this behavior is tied to the fact that these men look like his father, with whom he had an abusive relationship as a child. What psychological framework would directly address the unconscious bias in his behavior?
+a) Behaviorist
+b) Psychoanalytic
+c) Cognitive behavioral
+d) Humanistic",b
+2,"Who set the world record for the mile race in 1886?
+a) R Bannister
+b) S Coe
+c) J DiMaggio
+d) WG George",d
+3,"Which of the following statements identifies a chemically based sensory system?
+I. Gustatory system
+II. Auditory system
+III. Olfactory system
+a) I only
+b) II only
+c) III only
+d) I and III only",d
+4,"The complete resynthesis of phosphocreatine after very high intensity exercise normally takes:
+a) about 10 seconds.
+b) about 30 seconds.
+c) about 1 minute.
+d) about 4 minutes.",d
+5,"A race car attempting to jump a series of 8 buses is set up on a flat track with a ramp at the end. Engineers assigned to the project have determined that, in order to jump the buses, the car must reach a velocity of 130 km/h. If the distance of the track is 50m, at what rate must the car accelerate to reach this velocity?
+a) 13 m/s^2
+b) 26 m/s^2
+c) 7 m/s^2
+d) 17 m/s^2",a
+6,"Fatty acids are transported into the mitochondria bound to:
+a) thiokinase.
+b) coenzyme A (CoA).
+c) acetyl-CoA.
+d) carnitine.",d
+7,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+Based on the article, which of the following statements is the author likely to agree with?
+a) Heart surgery patients who cannot run on treadmills may benefit from sauna use.
+b) Patients on a diet would benefit from sauna use.
+c) Salt restriction would be equal to sauna use for hypertensive patients.
+d) Patients with skin conditions may be cured with sauna use.",a
+8,"Diisopropylfluorophosphate (DFP) binds to the active site of acetylcholinesterase (ACE) in the synapses of neurons. When DFP binds to ACE, the ACE enzyme is rendered permanently inactive. This makes DFP a potent toxin, with lethal amounts at less than 100 mg. The interaction between DFP and ACE can best be characterized as:
+a) Competitive inhibition
+b) Noncompetitive inhibition
+c) Irreversible inhibition
+d) Partially competitive inhibition",c
+9,"The process of translation requires the presence of:
+a) mRNA, tRNA and ribosomes.
+b) mRNA, ribosomes and RNA polymerase.
+c) DNA, mRNA and RNA polymerase.
+d) chromatin, DNA and amino acids.",a
+10,"Performance enhancing synthetic steroids are based on the structure of the hormone:
+a) testosterone.
+b) cortisol.
+c) progesterone.
+d) aldosterone.",a
+11,"Perchloric acid (HClO4) is considered one of the stronger acids in existence. Which of the following statements corresponds most accurately with strong acids?
+a) Ka is less than 1
+b) They have an open electron spot on their outer valence rings
+c) They have stable conjugate bases
+d) They remain bound in the presence of water.",c
+12,"A descript amount of 2-bromobutane is placed into a strong solution of ethanol and allowed to complete a reaction. The result of this reaction produces a major product of 2-butene and a minor product of 1-butene. Which of the following descriptions of the starting compound explains why 2-butene is the major product?
+a) Carbon 3 has less hydrogen atoms
+b) 1-butene rearranges to 2-butene in solution
+c) Ethanol prefers the second carbon in any chain
+d) Cyclic aromatization",a
+13,"A hedonic teenager of wayward morals, in one night, sequentially i) has consensual sexual intercourse with his sister, ii) leaves no tip at the bar, iii) has non-censual sexual relations with an unknown woman, and iv) vomits on the steps to the door of a local church. The teenager has violated society’s norms sequentially (to the greatest degree) on the order of:
+a) mores, mores, the law, mores
+b) taboo, folkways, the law, and taboo
+c) the law, folkways, folkways, and folkways
+d) taboo, folkways, the law, and mores",d
+14,"The maximum sustainable power:
+a) usually remains constant during a race.
+b) declines with the distance of the race.
+c) is improved by a high fat diet.
+d) is inversely related to muscle glycogen content.",b
+15,"A patient comes into the ER looking extremely agitated. They are acting aggressive, and claiming they need medication or “bad things will happen”. What is the likely state of this patient’s dopamine system?
+a) There is decreased dopamine in the synaptic cleft.
+b) There are decreased dopamine receptors on the post-synaptic membrane.
+c) There is cell death in the areas with high dopamine cells.
+d) There is seizure-like activity in the dopamine brain areas.",b
+16,"A scientist carrying out experiments on hearing aids fits 30 mice that were genetically modified to lose their hearing with the latest technology and were tested to press a lever when they heard a bell. This was set to varying levels of power. At 80% power, 20 mice pressed the lever. At 70% power, 15 mice pressed the lever. At 60% power, 10 mice pressed the lever. Which of the following power levels corresponds to the absolute threshold for hearing the decibels produced by the bell?
+a) 80%
+b) 70%
+c) 60%
+d) Not enough information given.",b
+17,"The transcription of DNA to a molecule of messenger RNA occurs:
+a) on the ribosomes.
+b) in the cytosol.
+c) in the nucleus.
+d) only during cell division.",c
+18,"A new enzyme is found in a transgenic mice that participates in synthesis of an unknown product using two reactants. When using radiolabeled compounds to study the enzyme, it is found that the enzyme catalyzes a process that switches a nitrogen group on one reactant to the other reactant. Which of the following categories would this new enzyme fall under?
+a) Oxidoreductase
+b) Transferase
+c) Hydrolase
+d) Lyase",b
+19,"For a very weak base, the pKb of a solution would likely be:
+a) Equal to the pOH
+b) Higher than the pOH
+c) Lower than the pOH
+d) Near 7 at 25ºC",b
+20,"The genome is:
+a) the number of chromosomes found in the somatic cells of an organism.
+b) the entire DNA sequence of an organism.
+c) the entire list of proteins that an organism is capable of producing.
+d) the DNA sequence of an entire chromosome.",b
+21,"Which of the following are steroid-based molecules?
+I. Testosterone
+II. Triglycerides
+III. Progesterone
+IV. DNA
+a) I only
+b) I, II, and III
+c) I and III
+d) I, III, and IV",c
+22,"Most of the free fatty acids are transported in the blood:
+a) inside the red blood cells.
+b) as lipoproteins.
+c) combined with glucose.
+d) bound to albumin.",d
+23,"Which of the following factors can affect enzyme activity?
+a) Temperature.
+b) pH.
+c) The presence of certain metal ions.
+d) All of the above.",d
+24,"Living cells require constant interaction with the outside environment in order to attain the materials they need for survival, as well as to rid themselves of waste. Of the following processes, which uses only the gradient of material to control the direction in which the material moves across the cell membrane?
+a) Osmosis
+b) Passive Transport
+c) Active Transport
+d) Endocytosis",a
+25,"Embedded in the inner membrane of the mitochondrion are:
+a) the enzymes of the tricarboxylic acid cycle (Krebs' cycle).
+b) the components of the electron transport chain.
+c) glycogen molecules.
+d) triacylglycerol molecules.",b
+26,"A segment of DNA from a lab mouse is determined to be 5’ – GGATCCTCATG – 3’. Which of the following DNA segments would be the result of this original DNA sequence experiencing both a point mutation and a deletion?
+a) 5’ – GCATCCTCATG – 3’
+b) 5’ – TGATCCCAG – 3’
+c) 5’ – GGTCCTCATC – 3’
+d) 5’ – GGATCCATG – 3’",c
+27,"While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters away traveling at 72 km/h in the same direction. If the frequency of the gunshot is normally 800Hz, what is the perceived frequency which the camera picks up the gunshot at?
+a) 941 Hz
+b) 787 Hz
+c) 924 Hz
+d) 912 Hz",c
+28,"An object rests on a plane, with an angle of incline, ?, an acceleration due to gravity, g, and a coefficient of friction µ between the object and the plane. Which of the following gives the acceleration of the object?
+a) a = g sin ?
+b) a = g (sin ? – cos ?)
+c) a = g (cos ? – µ sin ?)
+d) a = g (sin ? – µ cos ?)",d
+29,"David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to better players, and is very hard on himself when he cannot master a section of one of his pieces. Which of the following answers best describes David?
+a) Low self-esteem, strong self-efficacy, internal locus of control
+b) High self-esteem, strong self-efficacy, internal locus of control
+c) Low self-esteem, strong self-efficacy, external locus of control
+d) Low self-esteem, low self-efficacy, internal locus of control",a
+30,"A common heart defect in humans is a ventricular septal defect, in which there is a hole in the septum between the right and left ventricles. If a patient were to have this defect, which of the following statements is correct?
+a) The percentage of oxygen in the left atrium would be lower.
+b) The percentage of CO2 in the right ventricle would be higher.
+c) The percentage of oxygen in the right atrium would be lower.
+d) The percentage of oxygen in the right ventricle would be higher.",d
+31,"When preparing for the MCAT exam, a student begins studying electrochemical cells. He learns the basic information needed by actively relating it to previous information he has learned about redox reactions. He then builds from that knowledge to learn the advanced concepts needed. The student’s process is best characterized as:
+a) Chunking
+b) A network model
+c) Maintenance rehearsal
+d) Elaborative rehearsal",d
+32,"Two scientists at a conference on evolution take to the stage on day 3 to argue their theories against one other. Each is a devout student of their own philosophy. The first scientist contends that organisms evolved via the increase of organs that were used the most during their time. They would then pass these on to subsequent generations. The second scientist, however, believed that advantages each organism possessed were absent for a long time, randomly occurred, and when they were beneficial, that organism would rapidly populate the population over a short period of time, evolutionarily speaking. Which of the following statements would strengthen the second scientist’s argument?
+a) A study that shows that bodybuilders who train more have larger children.
+b) A taxonomy study that shows long periods of stagnant growth followed by short burst of massive evolution.
+c) A study that showed a species who were more successful due to the things they learned over their lifetime that they passed on to their children.
+d) A study that showed a consistent amount of time between the emergence of each new species.",b
+33,"A source emits a sound from one medium with a certain velocity, intensity, frequency and wavelength. When the sound exits the first medium and enters a denser medium, all of the following changes EXCEPT:
+a) velocity
+b) intensity
+c) frequency
+d) wavelength",c
+34,"The energy charge of the cell is:
+a) the difference between the charge on the outside and inside of a cell.
+b) generated by the sodium-potassium ATPase.
+c) the overall rate of energy use by the cell.
+d) the extent to which the total adenine nucleotide pool is phosphorylated.",d
+35,"The body compensates for increased environmental temperature by:
+a) decreasing salt retention
+b) increasing respiration rate
+c) increasing heart rate
+d) increasing water lost through skin",d
+36,"Which of the following releases most energy when completely oxidised in the body?
+a) One gram of glucose
+b) One gram of palmitic acid
+c) One gram of leucine
+d) One gram of alcohol",b
+37,"An individual is born with a mutation causing her to partially retain a form of fetal hemoglobin into adulthood. Compared to a normal individual, this person would exhibit:
+a) no differences from a normal adult.
+b) significantly reduced oxygen binding in the lungs.
+c) no symptoms, since retention of fetal hemoglobin would be fatal.
+d) increased oxygen binding to hemoglobin in the tissues.",d
+38,"Women's world record performances have improved rapidly in recent years mainly because:
+a) women have evolved a greater muscle mass.
+b) women can now run faster than men.
+c) women have started training at an earlier age.
+d) more women are now engaged in sport.",d
+39,"During muscular contraction, interactions between myosin and actin allow for shortening of each sarcomere. In addition to the power stroke, what other process of muscle contraction requires ATP?
+a) Tropomyosin-troponin interaction
+b) Myosin-actin interaction
+c) Calcium-troponin interaction
+d) Myosin-actin detachment",d
+40,"The activity of creatine kinase is:
+a) increased when intracellular ADP rises.
+b) increased when muscle pH falls below 6.9.
+c) always lower in Type II fibres than Type I fibres.
+d) increased after a period of endurance training.",a
+41,"A teacher sets up a reward system for her elementary school students. At the end of each day, she gives a sticker to each student who showed up on time that morning. At the end of each week, she gives a sticker to any student who got above a 90% on three quizzes in a row. After months of this regimen, she finds that performance on the quizzes has increased significantly but that tardiness has only decreased slightly. Which of the following best explains the teacher’s observation?
+a) Variable ratio schedules create the strongest responses and behavior that is the least susceptible to extinction.
+b) The students had more intrinsic motivation to do well on quizzes than to show up on time.
+c) The students’ behavior change was stronger in response to a fixed-ratio schedule than it was to a continuous reinforcement schedule.
+d) The students’ behavior change was stronger in response to a fixed-ratio schedule than it was to a variable-interval schedule.",c
+42,"The net production of ATP via substrate-level phosphorylation in glycolysis is:
+a) 2 from glucose and 3 from glycogen.
+b) 2 from glucose and 4 from glycogen.
+c) 3 from glucose and 4 from glycogen.
+d) 3 from glucose and 2 from glycogen.",a
+43,"Pregnancy tests are extremely sensitive and function by detecting levels of B-hCG, or human chorionic gonadotropin, in urine. This hormone is secreted by what tissue, and what is its function?
+a) Corpus luteum, self-maintenance
+b) Endometrium, cell division
+c) Blastocyst, increase in blood flow
+d) Blastocyst, corpus luteum maintenance",d
+44,"The son of a bricklayer goes to college and i) becomes a teacher at a medical school, ii) gets promoted to tenured professor, and iii) moves across the country for a new tenured professor position at a different school. Sequentially, this man has experienced:
+a) intergenerational mobility with respect to the father, horizontal mobility, horizontal mobility
+b) intragenerational mobility with respect to the son, upward mobility, upward mobility
+c) intergenerational mobility with respect to the father, upward mobility, horizontal mobility
+d) intragenerational mobility with respect to the son, horizontal mobility, upward mobility",c
+45,"DNA polymerase creates new DNA by adding complimentary nucleotides to a template strand from the original double-stranded DNA. If a section of the template strand had a ration of 3:2 of A:T bases, what is the ration of A:T in the newly synthesized complimentary strand of DNA?
+a) 3:02
+b) 1:01
+c) 2:03
+d) cannot be determined",c
+46,"How many CO2 and ATP molecules are formed during one complete turn of the tricarboxylic acid cycle (Krebs' cycle)?
+a) 2CO2 and 2ATP
+b) 2CO2 and 16ATP
+c) 2CO2 and 12ATP
+d) 2CO2 and 1ATP",d
+47,"A young child is brought to a psychologist for evaluation of their home situation. The child is placed in the middle of the floor, with the mother on one side and the psychologist on the other. The mother then leaves for a short while, and then returns. Which of the following would be a concerning sign during this evaluation?
+a) Decreased exploration when the mother is out of the room.
+b) Crying and returning to the mother upon return.
+c) Avoiding the mother upon return.
+d) Exploring the room before the mother leaves.",c
+48,"In a fit of passion, the spectator of a political debate exclaims that “welfare recipients are all lazy.” The spectator’s thought process is an example of:
+a) prejudice
+b) discrimination
+c) ethnocentrism
+d) conflict theory",a
+49,"Neonatal Respiratory Distress Syndrome (NRDS) is a serious complication seen in infants born prematurely who have a compromised ability to facilitate oxygen diffusion across their alveolar membranes. This is caused by inadequate surfactant production. What role does surfactant play in facilitating oxygen diffusion?
+a) Increases surface permeability
+b) Maintains alveoli in an open state
+c) Depresses cilia of the lung
+d) Dilates blood vessels",b
+50,"Using this formula, if a reaction was provided with 84g of ethane and unlimited oxygen, how many grams of carbon dioxide would result (Carbon atomic weight: 12amu, Hydrogen atomic weight: 1amu, Oxygen atomic weight: 16amu)?
+﻿
+The unbalanced reaction of ethane gas to carbon dioxide and water is as follows:
+
+ C2H4 + O2 —> CO2 + H2O
+a) 78g
+b) 528g
+c) 264g
+d) 156g",c
+51,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+Based on the article, what would be an important thing for a person to do after sauna use?
+a) Shower in cold water.
+b) Exercise.
+c) Eat a meal.
+d) Replenish fluids with filtered water.",d
+52,"Which of the following is not an amino acid?
+a) Glutamic acid
+b) Aspartic acid
+c) Glutamine
+d) Palmitic acid",d
+53,"Approximately how many kJ of energy are expended if an athlete's steady-rate oxygen uptake averages 3.0 l/min for 5 minutes of exercise?
+a) 60 kJ
+b) 150 kJ
+c) 300 kJ
+d) 500 kJ",c
+54,"The low intake of carbohydrate in the diet:
+a) does not influence exercise performance in events lasting less than 10 minutes.
+b) affects the resting muscle pH.
+c) may impair high intensity exercise performance.
+d) results in greater reliance on muscle glycogen during exercise.",c
+55,"Which of the following processes is not used to modify protein structure after translation has occurred?
+a) Lipidation.
+b) Attachment of more amino acids via peptide bonds.
+c) Glycosylation.
+d) Phosphorylation.",b
+56,"Which of the following promotes glucose and amino acid uptake by muscle?
+a) Adrenaline
+b) Insulin
+c) Glycogen
+d) Cortisol",b
+57,"When branched chain amino acids are deaminated in muscle, the ammonia produced is mostly:
+a) converted into arginine and released from the muscle.
+b) converted into alanine and glutamine and released from the muscle.
+c) converted into urea and released from the muscle.
+d) used to synthesise purines and pyrimidines in the muscle.",b
+58,"A certain molecule acts by binding to cytochrome oxidase A3, the final enzyme in the electron transport chain. Administration of a large dose of this substance to a human would likely:
+a) Lead to death due to an inability of the cell to pass electrons to oxygen, thus stopping aerobic respiration and asphyxiating the cells.
+b) Lead to death due to an inadequate supply of ADP to accept a phosphate group at the ATP synthase enzyme.
+c) Have no effect as cells would switch which macronutrient they metabolize to circumvent the blocked biochemical pathway.
+d) Increase the cell’s ATP production as negative feedback would cause the cell to up-regulate anaerobic pathways.",a
+59,"In response to period of extreme psychological trauma, a patient begins experiencing a feeling of detachment. He says, “I felt like it wasn’t real while it was happening. I was just watching myself do it without any control. I mean, you know, I knew it was happening but I didn’t feel like it was.” The patient is describing:
+a) Dissociative identity disorder
+b) An anxiety disorder
+c) Depersonalization disorder
+d) A schizophrenic episode",c
+60,"Endurance training increases the muscle's capacity to:
+a) contract faster.
+b) break down phosphocreatine.
+c) burn fat and carbohydrate.
+d) generate energy anaerobically.",c
+61,"Metabolism is determined by the:
+a) size of proteins in the cell.
+b) availability of amino acids.
+c) proteins formed as dictated by the genetic material.
+d) amino acid composition of the ribonucleic acids.",c
+62,"In order to determine the doppler shift in perceived sound frequency, the following variables must be known:
+I. speed of sound in medium
+II. Time of interaction between sound source and detector
+III. distance between source and detector
+IV. frequency of emitted sound
+a) I only
+b) I and III
+c) II and IV
+d) I and IV",d
+63,"The key attribute in successful marathon running is:
+a) strength.
+b) power.
+c) stride length.
+d) stamina.",d
+64,"Which of the following phases are common to cells undergoing meiosis and mitosis?
+I. G0
+II. phase G2
+III. phase S phase
+a) I only
+b) I and II only
+c) II and III only
+d) I, II, and III",c
+65,"If the mean rate of oxygen consumption of a male athlete during a training session is 2 l/min, then his rate of energy expenditure is approximately:
+a) 400 kJ/min.
+b) 200 kJ/min.
+c) 80 kJ/min.
+d) 40 kJ/min.",d
+66,"In a double stranded molecule of DNA, the ratio of purines : pyrimidines is:
+a) variable.
+b) determined by the base sequence in RNA.
+c) genetically determined.
+d) always 1:1.",d
+67,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+The review article sources a lot of data from Finland population studies, where the incidence of sauna use is substantially higher than most countries. Using the data, which of the following is something that is more plausible in Finland than elsewhere?
+a) More gold medals in adolescent skiing.
+b) An 86-year old male mayor who is revered in the community.
+c) Increased rate of pets in the household.
+d) Improved marriage satisfaction rates.",b
+68,"Karen is a college student working on developing a stronger sense of self-esteem and self-efficacy with her therapist. She has noticed a great change in her ability to handle situations after 3 months of therapy. Which of the following would NOT be a strategy that her therapist would ask her to employ to raise her sense of self-efficacy?
+a) Seek positive feedback from friends.
+b) Put in daily practice on the tasks she wishes to improve on.
+c) Find others her age and ability who excel at tasks she is interested in.
+d) Avoid potential pitfalls by withholding from tasks she is not proficient in.",d
+69,"Phophocreatine resynthesis during recovery from exercise is inhibited by:
+a) an excess of creatine.
+b) hyperventilation.
+c) an excess of oxygen.
+d) a lack of oxygen.",d
+70,"A thin layer chromatography is performed on both the reactants and products of a reaction. It is found that the products have an Rf value that is significantly higher than the reactants. Which of the following could adequately describe this reaction:
+a) SN2 reaction converting an alkyl bromide to an alkyl chloride
+b) Addition reaction converting an alkene to an alcohol
+c) Nucleophilic acyl substitution reaction converting an ester to an anhydride
+d) Elimination reaction converting an alcohol to an alkene",d
+71,"The synthesis of glucose from lactate, glycerol, or amino acids is called:
+a) glycogenolysis.
+b) glycolysis.
+c) lipolysis.
+d) gluconeogenesis.",d
+72,"After what period of time does maximal dynamic exercise become predominantly aerobic?
+a) 10 seconds
+b) 30 seconds
+c) 1 minute
+d) 4 minutes",c
+73,"Which of the following best accounts for the negative slope of the liquid-solid equilibrium line in the phase diagram for water?
+a) H2O(s) has a greater density than H2O(l), which causes the solid to form liquid under high pressure conditions.
+b) H2O(s) has a greater density than H2O(l), which results from the hydrogen bonds formed between water molecules.
+c) H2O(s) has a lower density than H2O(l) which results from the crystalline framework that forms due to hydrogen bonds.
+d) H2O(s) has a lower density than H2O(l) which causes the solid to form liquid under low pressure conditions.",c
+74,"Mg(OH)2 is slowly dissolved in 500 mL of 25 oC water until the solution becomes fully saturated. Which of the following occurs when 10.0 mL of 0.1 M HCl is added?
+a) MgCl2 precipitates
+b) Mg(OH)2 precipitates
+c) Ksp for Mg(OH)2 increases
+d) [H2O] increases",d
+75,"Myoclonic epilepsy and ragged-red fiber (MERRF) is an extremely rare disorder that affects neuromuscular systems. MERRF results from a mutation in mitochondrial DNA (mtDNA) that impairs protein synthesis, oxygen consumption, and energy production. When an affected male and a normal female reproduce, which of the following best predicts the expected phenotypic ratios of the offspring?
+a) None of the offspring will be affected
+b) All males and no females will be affected
+c) Half of males and half of females will be affected
+d) One-fourth of the offspring will be affected",a
+76,"Selective Androgen Receptor Modulators (SARMs) are:
+a) steroid drugs that act on androgen receptors mimicking the effects of natural steroid hormones.
+b) steroid drugs that act on androgen receptors antagonising the effects of natural steroid hormones.
+c) non-steroid drugs that act on androgen receptors mimicking the effects of natural steroid hormones.
+d) non-steroid drugs that act on androgen receptors inhibiting the effects of natural steroid hormones.",c
+77,"An action potential arriving at the motor endplate causes release of:
+a) acetylcholine which traverses the neuromuscular junction.
+b) sodium ions which binds to sodium receptors on the muscle membrane.
+c) calcium ions which initiate an action potential along the muscle fibre.
+d) noradrenaline which increases muscle metabolic activity.",a
+78,"All of the following are example of sensory, or neural, adaptation EXCEPT:
+a) After putting on a shirt, you eventually no longer feel the sensation of the fabric on your back.
+b) After first walking into a crowded room, you no longer are distracted by the buzz of conversation around you.
+c) After first walking outside on a sunny day, you no longer are blinded by the initial brightness of the light.
+d) After first walking into an anatomy lab, you no longer notice the smell of formaldehyde.",c
+79,"A scientist, using electrodes, is stimulating a group of neurons in the hypothalamus and recording their membrane potential changes. She observes a sharp rise in membrane potential when she first stimulates them, the the difference of 100mV. When she tries another stimulation immediately after the first, there is no response. However, when she increase the amount of voltage she supplies to the second shock, she observes a similar response to the first. What time period of stimulation would the second shock be characterized in regards to membrane potential?
+a) Depolarization
+b) Repolarization
+c) Hyperpolarization
+d) Resting potential",c
+80,"The β-oxidation of a molecule of palmitic acid, CH3(CH2)14CO2H:
+a) yields 8 molecules of acetyl-CoA and some ATP and water.
+b) yields 16 molecules of acetyl-CoA only.
+c) yields carbon dioxide and water only.
+d) does not involve oxygen.",a
+81,"What is the most likely outcome of this modification?
+﻿
+An RNA strand that normally produces a transmembrane protein that facilitates potassium entry into muscle cells is modified to produce a different strand. The original strand is as follows:
+
+ GAAUAGAUGGGAAGCGCCAGAUACAGUAACAGA… 
+
+The modified sequence is as follows:
+
+ GAAUAGAUGGGAAGCGCCAGAUACAGUACCAGA…
+a) Absence of the protein
+b) Production of a similar-sized but dysfunctional protein
+c) No change
+d) Production of a larger, likely dysfunctional protein",d
+82,"Glycolysis is the name given to the pathway involving the conversion of:
+a) glycogen to glucose-1-phosphate.
+b) glycogen or glucose to fructose.
+c) glycogen or glucose to pyruvate or lactate.
+d) glycogen or glucose to pyruvate or acetyl CoA.",c
+83,"A psychologist conducts an experiment in which subjects are asked to learn a series of “facts” which are actually statements that have been fabricated by the research team. The subjects consist of undergraduate students at the university where the experiment is being conducted. The subjects are randomly assigned to groups that are compensated either $10 or $20 for their participation, are given either 15 minutes or 30 minutes to learn the facts, and are asked to recall the facts either in the same room in which they learned the facts or in a very different, unfamiliar setting. Which of the following are dependent variables in this experiment?
+I. The amount the subjects were compensated.
+II. The room in which the subjects were asked to recall facts.
+III. The number of facts the subjects can recall.
+IV. The time the subjects were given to learn the facts.
+a) II only
+b) III only
+c) I and IV only
+d) I and III and IV only",b
+84,"Which of the following is thought to be implicated in the development of peripheral muscle fatigue during multiple sprint activities?
+a) An accumulation of inorganic phosphate.
+b) Development of hyperosmolality in the muscles.
+c) An excess of antioxidants.
+d) A lack of potassium.",a
+85,"A muscle fibre relaxes when:
+a) the nerve stimulus is removed.
+b) the nerve stimulus is too forceful.
+c) the actin binding sites are uncovered.
+d) the actin binding sites are saturated.",a
+86,"The pyruvate dehydrogenase complex:
+a) is located in the sarcoplasm.
+b) catalyses the conversion of pyruvate to acetyl CoA.
+c) catalyses the conversion of pyruvate to lactate.
+d) catalyses the conversion of lactate to pyruvate.",b
+87,"Hydrogen ions are formed when:
+a) glycogen becomes depleted.
+b) phosphocreatine breakdown occurs.
+c) pyruvate is converted to lactate.
+d) glycolysis is being used as a major means of resynthesising ATP.",d
+88,"Our genetic material is made up of:
+a) deoxyribonucleic acid.
+b) ribonucleic acid.
+c) dinitronucleic acid.
+d) protein.",a
+89,"A dentist that is performing procedures in his clinic is brought out to the front desk one day to handle a dispute between one of his patients and the clerk. The patient is a middle-aged businessman who is irate and creating a scene because he was told he would have to see the dental hygienist instead of the dentist. The patient loudly rants that he makes too much money to be subjected to treatment by a half-trained associate. The clerk explains to the dentist that the patient was 40 minutes late to his appointment, and the only opening now was with the hygienist. The patient snaps back that his time is worth more than any of the people in the office. What personality disorder is this patient likely exhibiting?
+a) Histrionic
+b) Narcissistic
+c) Paranoid
+d) Obsessive-compulsive",c
+90,"Vygotsky’s sociocultural development theory attempts to describe the interaction between the mental function children are born with and how they develop those into what they possess as adults. One of the important components of this is the zone of proximal development. Which of the following statements accurately describes an individual in the zone of proximal development?
+a) A baseball player hits baseballs from a tee in order to build muscle memory.
+b) A concert flute player falls short of finishing a piece that has a very complex ending without mistakes
+c) A high school English student submits a paper for review by his professor.
+d) A high diver takes instruction from her coach to improve her form on a specific move.",d
+91,"A young man working with a therapist on becoming more productive is expressing many of his desires throughout growing up and how he feels that it has affected him. Through discernment, the therapist states that he believes the young man’s development is stuck in a stage that reflects itself by his inability to keep his house clean. According to Freud’s theory of psychosexual development, what stage would this young man be fixated in?
+a) Anal
+b) Phallic
+c) Latent
+d) Genital",b
+92,"What type of covalent bonds link the amino acids in a protein?
+a) Peptide bonds
+b) Hydrogen bonds
+c) Ionic bonds
+d) Glycosidic bonds",a
+93,"Walking down a street late at night, an adult male pedestrian notices a young female on the ground, not moving. The female is on the opposite side of the street. Crossing the street, the pedestrian notices that the young woman appears both much wealthier than he is and is of a different ethnicity. Seeing no one else present, the pedestrian renders aid. According to the bystander effect, which of the following would change how the pedestrian reacts?
+a) The person requiring aid appearing to be of a lower socioeconomic class rather than a higher one
+b) The presence of another group of people one block up the street
+c) The person requiring aid appearing to be the same ethnicity rather than a different one
+d) The presence of one other person who is already approaching the girl",d
+94,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+Which of the following is a likely paragraph that follows this excerpt in the article?
+a) A paragraph on a protein that facilitates intracellular function in response to heat.
+b) A paragraph on increased heart attacks in Eskimo populations.
+c) A recap of Finland’s water polo team excellence.
+d) A study on rats exposed to high levels of heat.",a
+95,"Muscle lactate production increases when:
+a) oxygen is readily available.
+b) pyruvate cannot be formed from glucose breakdown.
+c) the pH of the muscle falls.
+d) glycolysis is activated at the onset of exercise.",d
+96,"Triacylglycerides consist of I. A ribose backbone II. a glycerol backbone III. three phosphodiester linkages IV. three ester linkages
+a) I and III
+b) II only
+c) II and III
+d) II and IV",d
+97,"Noncompetitive inhibition differs from uncompetitive inhibition in that a noncompetitive inhibitor binds to an allosteric site on the enzyme and prevents it from catalyzing a reaction, whereas uncompetitive inhibitors bind to the enzymesubstrate complex and prevent catalysis. Increasing the substrate concentration would have which of the following effects?
+a) Increasing impact of uncompetitive inhibitor and decreasing concentration of noncompetitive inhibitor
+b) Decreasing impact of uncompetitive inhibitor and increasing impact of noncompetitive inhibitor.
+c) Increasing impact of uncompetitive inhibitor
+d) No effect",c
+98,"Tyler is a high school student who is planning on becoming an engineer. In his calculus II class sophomore year, he receives an F on his first test. Which of the following responses to this event would indicate that Tyler has a higher likelihood of improving in subsequent exams?
+a) He decides that the first test is always harder than the others.
+b) He says the teacher graded his exam harder because she doesn’t like him.
+c) He says it was due to some home circumstances that won’t be present during the next exam.
+d) He critiques his study methods and tries to find out which led to poor returns.",a
+99,"In nerve cells, microtubule-associated proteins (MAPs), most notably MAP2 and MAP tau, act to stabilize microtubules. In a mouse model, a mutant is developed that vastly reduced function across all families of MAPs, leading to increased microtubule degradation. Which cellular activity would likely be most affected?
+a) Cardiac muscle contraction
+b) Transcription of mRNA from DNA
+c) Krebs cycle
+d) Meiosis",d
+100,"The trigger to initiate the contractile process in skeletal muscle is:
+a) potassium binding to myosin.
+b) calcium binding to tropomyosin.
+c) ATP binding to the myosin cross bridges.
+d) calcium binding to troponin.",d
+101,"The sarcoplasmic reticulum in muscle cells acts as a:
+a) store of digestive enzymes.
+b) store of sodium ions.
+c) store of lipid.
+d) store of calcium ions.",d
+102,"Alterations in which neurotransmitters in the brain by pharmacological agents has been shown to influence fatigue development?
+a) Acetyl choline and noradrenaline.
+b) Dopamine and acetyl choline.
+c) Glutamate and serotonin.
+d) Dopamine and serotonin.",d
+103,"Oxygen is used:
+a) in glycolysis.
+b) in the conversion of fatty acids to acetyl CoA.
+c) in the tricarboxylic acid cycle (Krebs' cycle).
+d) in glycogenolysis.",b
+104,"Mutations are errors in DNA that:
+a) are always harmful.
+b) only occur in the presence of carcinogens.
+c) increase tumour growth.
+d) occur spontaneously at a low rate.",d
+105,"The enzymes of glycolysis are located in the:
+a) mitochondrion.
+b) nucleus.
+c) cytoplasm.
+d) lysosomes.",c
+106,"Rational choice theory is premised on the concept that actions are chosen based on the benefit to the individual. The three main assumptions of rational theory are completeness, transitivity, and independence of variables. This is most accurately described as what kind of system?
+a) Hierarchical
+b) Patriarchal
+c) Matriarchal
+d) Oligarchic",a
+107,"Which products of ADP degradation increase in concentration in the blood during multiple sprint sports?
+a) Ammonia, hypoxanthine and uric acid.
+b) Ammonia, urea and uric acid.
+c) Ammonia, urea and creatinine.
+d) Ammonia, urea and creatine.",a
+108,"The rate limiting enzyme of glycolysis is:
+a) phosphorylase.
+b) hexokinase.
+c) pyruvate dehydrogenase.
+d) phosphofructokinase.",d
+109,"A fundamental cause of fatigue in high intensity exercise is:
+a) a fall in the cell concentration of ADP.
+b) inhibition of ATP production.
+c) failure of the ATP supply to match the demand.
+d) lack of skill.",c
+110,"The rate of blood lactate accumulation is determined by:
+a) the rate of muscle lactate production and the rate of muscle lactate efflux.
+b) the rate of anaerobic glycolysis.
+c) the rate of muscle glucose uptake.
+d) the difference between the rate of lactate appearance and the rate of lactate clearance.",d
+111,"Type I muscle fibres have the following characteristics:
+a) white, glycolytic, slow contracting.
+b) white, oxidative, slow contracting.
+c) red, oxidative, fast contracting.
+d) red, oxidative, slow contracting.",d
+112,"If a gas occupies 0.1L at 200atm, what will its volume be at 1atm?
+a) slightly less than 20L
+b) 20L
+c) slightly more than 20L
+d) 2000L",a
+113,"Assuming the circulatory system in humans obeys Bernoulli’s principle of fluid dynamics, which of the statements most accurately compares the blood pressure in a capillary of the neck to a capillary with an equal crosssectional area in the right knee?
+a) The pressure in the neck is greater than the pressure in the knee because of the increase in pressure head
+b) The pressure in the neck is equal to the pressure in the knee because of the equal dynamic pressure according to the continuity equation
+c) The pressure in the knee is greater than the pressure in the neck because of the increase in pressure head
+d) An accurate comparison cannot be given without knowledge of the fluid’s density and viscosity",c
+114,"Sodium bicarbonate ingestion improves middle distance running performance by:
+a) elevating the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+b) reducing the pH and buffering capacity of the extracellular fluid allowing a faster efflux of hydrogen ions from muscle.
+c) elevating the pH and buffering capacity of the extracellular fluid allowing a faster influx of hydrogen ions into muscle.
+d) elevating the pre-exercise muscle pH.",a
+115,"An individual presents to the clinic for initial evaluation and establishment of care. The patient was born 46, XY, but identifies as a female. Her preferred pronouns are She/Her. Additionally, she is sexually active with females only. What would describe the gender and orientation of this individual?
+a) Cis-gender, heterosexual
+b) Transgender, heterosexual
+c) Cis-gender, homosexual
+d) Transgender, homosexual",d
+116,"Which of the following can act as an intracellular buffer to limit pH changes when the rate of glycolysis is high?
+a) Glutamine
+b) Glucose
+c) Carnosine
+d) Amylase",c
+117,"A team of engineers constructing signal lights for airplanes that they can use to guide them to runways are attempting to determine the brightness needed for the pilot to be able to detect the tower at 1 mile away. They set the light to a test brightness and establish communication with an inbound pilot. When the pilot is 1 mile away from the tower, he says he cannot see the light. In terms of Signal Detection Theory, what would this be called?
+a) Hit
+b) Miss
+c) False alarm
+d) Correct rejection",b
+118,"New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?
+a) Subculture
+b) Counterculture
+c) Microculture
+d) Culture lag",a
+119,"Prosthetic groups are:
+a) required by all enzymes in the cell.
+b) loosely bound to enzymes via hydrogen bonds.
+c) sites on the enzyme molecule that permit allosteric modification of enzyme activity.
+d) tightly bound to enzymes and are required for their activity.",d
+120,"Codons are composed of:
+a) triplet sequences of nucleotide bases in mRNA or DNA .
+b) quadruplet sequences of nucleotide bases in mRNA or DNA.
+c) triplet sequences of amino acids in polypeptide chains.
+d) triplet sequences of deoxyribose sugars in DNA.",a
+121,"In games like soccer the blood lactate concentration:
+a) rarely increases above 3 mM.
+b) is usually lower at the end of the game than at the end of the first half.
+c) is usually higher at the end of the game than at the end of the first half.
+d) increases throughout the course of the game as the players become more fatigued.",b
+122,"All of the following are true regarding the function of neurons EXCEPT:
+a) Hyperpolarization at the end of an action potential is one mechanism by which neurons limit the rate at which action potentials may fire.
+b) The flow of sodium into the neuron depolarizes the membrane in the first phase of an action potential.
+c) The transmitting neuron secretes neurotransmitters into the synaptic cleft from its dendrites.
+d) An action potential is initiated when the axon hillock reaches the threshold potential.",c
+123,"Which of the following is true?
+a) Increasing the protein intake above 3 grams per kg body mass per day will stimulate muscle growth and increase strength.
+b) Creatine supplements can increase muscle strength and power.
+c) Amino acid supplements can increase muscle strength and power.
+d) Muscle damage is induced by shortening contractions.",b
+124,"Which of the following statements is false?
+a) Ammonia is produced in repeated high intensity exercise.
+b) Muscle lactate accumulation does not begin until at least 5 seconds of intermittent muscle contractions have taken place.
+c) Muscle phosphocreatine depletion begins in the first few seconds of high intensity exercise.
+d) With an increasing number of repeated sprints the rate of accumulation of lactate in muscle declines.",b
+125,"The most rapid method to resynthesize ATP during exercise is through:
+a) glycolysis.
+b) phosphocreatine breakdown.
+c) tricarboxylic acid cycle (Krebs' cycle).
+d) glycogenolysis.",b
+126,"The electron transport chain, which is embedded in the mitochondrial membrane, exists primarily to generate new molecules of ATP for use by the cell. This is accomplished by a positive gradient of H+ ions that are formed outside the membrane which then pass back through a specialized channel known as ATP synthase. The energy created from this phosphorylates an ATP to an ATP, known as oxidative phosphorylation. The mechanism by which H+ returns to the inside of the mitochondria is known as what?
+a) Passive transport
+b) Passive diffusion
+c) Active transport
+d) Endocytosis",a
+127,"Which of the following molecules will stop being produced first when oxygen is no longer supplied to the cell?
+a) Oxaloacetate
+b) Pyruvate
+c) Water
+d) Adenosine triphosphate",c
+128,"As a result of substance abuse throughout adolescence, a young adult suffers from a number of psychological symptoms reflecting diminished executive functioning. Which of the following are likely true of this patient?
+I. Pathological changes to the prefrontal cortex.
+II. Increased susceptibility to auditory hallucinations.
+III. Reduced behavioral impulse control.
+a) I only
+b) III only
+c) I and III only
+d) II and III only",c
+129,"Glycogen breakdown in muscle initially results in the formation of:
+a) glucose.
+b) glucose-1-phosphate.
+c) glucose-6-phosphate.
+d) glucose-1,6-diphosphate.",b
+130,"A wrestler attempting to lose weight for a match in December commits himself to dropping 30lbs over 2 months. Which of the following is NOT a good method to restrict his caloric intake?
+a) Study at a health smoothie store instead of a coffee shop.
+b) Reward himself with a savory meal every Saturday for meeting his calorie goals.
+c) Snap himself with a rubber band when he eats a high calorie snack.
+d) Hide snack food out of sight within his house.",d
+131,"In an SDS-PAGE procedure, the SDS serves as a detergent. Why are the proteins treated with a detergent before being run through the electrophoresis gel?
+a) To coat the proteins with a large positive charge, since amino acid side chains may have positive, negative, or neutral charges, and a large uniform charge is necessary to get good separation in the gel.
+b) To allow the electrophoresis to separate the proteins solely on the basis of the length of the primary sequence.
+c) To prevent the protein from denaturing so that the electrophoresis can accurately resolve the proteins on the basis of tertiary structure.
+d) To break the intramolecular bonds holding the tertiary and primary structure of the protein together, thereby generating linear fragments that may be sorted on size.",b
+132,"For very high force contractions lasting 1-2 seconds, the initial energy source is from:
+a) Glycolysis.
+b) creatine phosphorylation.
+c) phosphocreatine stores.
+d) ATP stores.",d
+133,"Which of the following factors does not influence success in sport?
+a) Ability to tolerate heavy training without succumbing to illness or injury.
+b) Tactics.
+c) The diet.
+d) Ingestion of carnitine during exercise.",d
+134,"The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm
+a) I only
+b) II only
+c) III only
+d) I and II",a
+135,"A transmembrane protein being isolated in the laboratory is found to be composed of four different amino acids in varying quantity. They are, in order of frequency, glycine, tyrosine, arginine, and isoleucine. Of these amino acids, which is most likely to be inside the transmembrane domain?
+a) Glycine
+b) Tyrosine
+c) Arginine
+d) Isoleucine",d
+136,"Which of the following nucleotide bases is not found in RNA?
+a) Thymine
+b) Adenine
+c) Uracil
+d) Guanine",a
+137,"Fast-twitch fibres contain:
+a) a relatively large number of mitochondria and low ATPase activity.
+b) a relatively small number of mitochondria and low ATPase activity.
+c) a relatively small number of mitochondria and high ATPase activity.
+d) a relatively large number of mitochondria and high ATPase activity.",c
+138,"The conversion of one molecule of glucose to two molecules of pyruvate results in the net formation of:
+a) six molecules of water.
+b) two molecules of ATP.
+c) three molecules of ATP.
+d) thirty-eight molecules of ATP.",b
+139,"Acute Myeloid Leukemia is a malignant cancer in which myeloid progenitor cells become rapidly dividing and retain their semi-stem cell state. Under normal circumstances, which of the following cell types would arise from this stem cell?
+a) NK cell
+b) Platelet
+c) T cell
+d) Lymphoid progenitor",b
+140,"Lactate and hydrogen ions leave the muscle:
+a) via a cotransport mechanism with carnosine.
+b) via an active transport mechanism.
+c) via a protein transporter molecule.
+d) by simple diffusion.",c
+141,"There are five stages of mitosis that must be carried out correctly for a cell to properly divide. Match the stage of mitosis with its proper component:
+Prophase — Dissolution of nucleoli
+a) Metaphase — Formation of two distinct nuclear membranes
+b) Cytokinesis — Separation of sister chromatids to their respective poles
+c) Telophase — Formation of the equatorial plate
+d) Anaphase — Separation of the cytoplasm and organelles",a
+142,"A study examined admissions to exceptionally selective colleges. When examining the correlates of admission acceptance, two obvious factors that strongly correlated with admissions were GPA and standardized test scores, with correlation values of +0.41 and +0.55 respectively. However, the study also demonstrated that those students who had social networks that overlapped with the alumni networks of the selective colleges were even more likely to be admitted, with a correlation between social network and alumni network of +0.61. This correlation demonstrates:
+a) the value of cultural capital.
+b) a meritocracy. 
+c) he value of social capital.
+d) a false association.",c
+143,"A patient comes into the hospital after being bit by a dog who he stated was “acting crazy”. The wound is open and bleeding. Animal control captured the dog and said that it was foaming at the mouth and extremely aggressive. Suspecting a rabies infection, the patient is given a serum that contains rabies antibodies that were grown inside a horse. This is an example of what kind of immunity?
+a) Passive
+b) Active
+c) Natural
+d) Artificial",a
+144,"The World Systems Theory divides the world as a unit into three subcategories: core countries, periphery countries, and semi-periphery countries. Which of the following answers correlates best with semi-periphery countries?
+a) Strong central government.
+b) An economy centralized around one natural resource.
+c) A diversified and developed economy.
+d) Small percentage of very high class individuals.",c
+145,"Kinase reactions:
+a) inhibit ATP breakdown.
+b) involve the addition or removal of a phosphate group.
+c) involve the addition or removal of a ketone group.
+d) involve the addition or removal of an amino acid to a polypeptide chain.",b
+146,"The main fate of lactate that leaves muscle and enters the circulation is:
+a) conversion to urea in the liver.
+b) conversion to glucose in the heart.
+c) excretion via the kidneys.
+d) uptake and oxidation by other tissues.",d
+147,"The ATP store in muscle can only supply energy in high intensity exercise for about:
+a) 2 milliseconds.
+b) 2 seconds.
+c) 10 seconds.
+d) 20 seconds.",b
+148,"Glycogen breakdown in exercising muscle is activated by:
+a) insulin.
+b) cortisol.
+c) increased pH.
+d) none of the above.",d
+149,"According to attachment theory, which of the following children is most likely to attach to a male psychologist, previously unknown to the child, in the course of a psychological study?
+a) A two month old female infant raised in a safe, stable environment
+b) A five month old male infant raised in a safe, stable environment
+c) An eight month old male infant raised by a single caregiver who frequently neglect the child
+d) A thirteen month old female infant raised by two caregivers who occasionally neglect the child",a
+150,"Creatine is synthesized from:
+a) amino acids in the muscles.
+b) amino acids in the liver.
+c) amino acids in the kidneys.
+d) creatinine in the kidneys.",b
+151,"The hypothalamus controls the stress response of the body by releasing CRF, which leads to eventual release of cortisol, the body’s stress hormone, systemically. This trigger is eventually suppressed by which mechanism?
+a) Constriction of blood flow to the adrenal gland.
+b) Exhaustion of the body’s store of CRF.
+c) Negative feedback loop of cortisol.
+d) Release of CRF-inhibitory factor.",c
+152,"A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:
+I. Self-esteem hypothesis
+II. Contact hypothesis
+III. Hypothesis
+IV. Legal hypothesis
+a) I, II, and III
+b) II, III, and IV
+c) I, III, and IV
+d) I, II, and IV",d
+153,"The energy for all forms of muscle contraction is provided by:
+a) ATP.
+b) ADP.
+c) phosphocreatine.
+d) oxidative phosphorylation.",a
+154,"How can several different proteins be produced from the same gene?
+a) By selective transcription of different parts of the DNA in the gene.
+b) By doubling or tripling the length of the mRNA molecule produced from the primary transcript.
+c) The primary transcripts of many genes can be spliced in various ways to produce different mRNAs, a process known as alternative RNA splicing.
+d) By splicing of the mRNA molecule after it has been formed from the primary transcript.",c
+155,"Phosphocreatine in the muscle cell is found in:
+a) the mitochondria.
+b) all subcellular compartments.
+c) the sarcolemma.
+d) the cytoplasm.",d
+156,"A scientist using mouse models to determine the response of blood hormones to large levels of glucose in the body discovers a new hormone not previously described. According to his data, this hormone is found both inside and out of cells when carrying out its function, increase the amount of nucleic acid in the cell while functioning, and are derived from a structure containing four hydroxycarbon rings. This will likely be categorized as which type of hormone?
+a) Enzymatic
+b) Steroid
+c) Peptide
+d) Amino acid",b
+157,"The coding sequences of genes are called:
+a) extrons.
+b) exons.
+c) introns.
+d) codons.",b
+158,"Each of the following is an example of the transmission of knowledge through symbolic culture EXCEPT:
+I. A young macaque monkey learning to rinse off food in the ocean from an older monkey, even when the food is not covered in dirt or sand.
+II. A child learning the rules of baseball from a parent.
+III. A new group of inductees in a military organization experiencing hazing rituals from older students, which they then later carry out on new recruits.
+a) I only
+b) III only
+c) I and III only
+d) II and III only",a
+159,"One of the many reasons that the eukaryotic cell can possess so much information in its DNA is the ability to condense coding regions when they are not being expressed. When acting on DNA, which of the following processes will usually lead to a decrease in gene expression?
+a) Increased histone acetyltransferase activity
+b) Decrease in histone deacetyltransferase activity
+c) Increase in methylation activity
+d) Increase in heterochromatin:euchromatin ratio",c
+160,"Anaerobic metabolism refers to the generation of ATP:
+a) without the involvement of ADP.
+b) without the use of glycogen.
+c) without the use of oxygen.
+d) in the absence of available oxygen.",c
+161,"Which of the following molecules does not form part of DNA?
+a) Purine
+b) Pyrimidine
+c) Deoxyribose
+d) Amino acid",d
+162,"How many electrons does gold (Au) possess that have a quantum number l = 2?
+a) 9
+b) 23
+c) 29
+d) 79",c
+163,"Sauna use, sometimes referred to as ""sauna bathing,"" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia – an increase in the body's core temperature – that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors… In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease… The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits – and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week… The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)…Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40°C (104°F), and then changes in core body temperature occur, rising slowly from 37°C (98.6°F, or normal) to 38°C (100.4°F) and then rapidly increasing to 39°C (102.2°F)…  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance… Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors… The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]
+
+According to the article, which of the following is NOT a benefit of sauna use?
+a) Decreased risk of heart attacks.
+b) Increase in stroke volume.
+c) Improved mental health.
+d) Decreased rate of erectile dysfunction.",d
+164,"With an increasing number of sprints the:
+a) anaerobic contribution progressively increases.
+b) pH of the muscle falls below 6.0.
+c) blood glucose concentration falls below 3 mmol/L.
+d) relative contribution of aerobic metabolism increases.",d
+165,"Fire hoses always have a nozzle on the end of the hose, which in part works by decreasing the area of the water exiting the fire hydrant to create a more forceful stream. If the starting velocity of water from a fire hydrant is 2 m/s, pressure is kept constant, and the end of the nozzle is 1/3 the area of the start of the hose, what is the final velocity of water as it exits?
+a) 2 m/s
+b) 8 m/s
+c) 5 m/s
+d) 6 m/s",d
+166,"Pairs of electrons carried in the form, FADH2 and NADH+H, collectively contain enough free energy to rephosphorylate:
+a) 6 ATP.
+b) 5 ATP.
+c) 4 ATP.
+d) 3 ATP.",b
+167,"The energy released from the breakdown of the high-energy phosphates, ATP and phosphocreatine, can sustain maximal exertion exercise for about:
+a) 1-2 seconds.
+b) 5-10 seconds.
+c) 30-40 seconds.
+d) 50-60 seconds.",b
+168,"The sex of a child is dictated by the inheritance of:
+a) the number of X chromosomes from the mother.
+b) a recessive allele on the X chromosome.
+c) a single Y chromosome from the mother.
+d) a single Y chromosome from the father.",d
+169,"The blood glucose concentration during 80-90 minutes of intermittent high intensity exercise:
+a) frequently rises by 1 - 3 mM.
+b) remains relatively unchanged.
+c) frequently falls by 1 - 3 mM.
+d) falls to hypoglycaemic levels.",a
+170,"During DNA replication, mistakes are coded into the leading strand about once every 100,000/1 million copies. This DNA is subject to proofreading by several mechanisms. If a mistake is noted and the incorrect base is removed shortly following the time RNA primer is removed, this would most likely be the work of which repair mechanism?
+a) DNA polymerase I
+b) DNA polymerase III
+c) Mismatch repair mechanism
+d) Endonuclease repair",a
+171,"Which of the following statements is false?
+a) Phosphofructokinase is the rate limiting enzyme in glycolysis.
+b) Phosphorylase activity is higher in Type II fibres than in Type I fibres.
+c) Endurance training increases the amount of TCA cycle enzymes in muscle.
+d) Oxygen is consumed in the TCA cycle.",d
+172,"Each of the following are aspects of the McDonaldization of Society EXCEPT:
+a) Rationalization of decisions into cost/benefit analysis structures and away from traditional modes of thinking
+b) Bureaucratic organization that formalizes well-establish division of labor and impersonal structures
+c) A dissolution of hierarchical modes of authority into collaborative teambased decision protocols
+d) An intense effort on achieving sameness across diverse markets",c
+173,"The descending loop of Henle of the nephron of the kidney is permeable to which of the following substances?
+a) Na+
+b) H2O
+c) K+
+d) Cl-",b
