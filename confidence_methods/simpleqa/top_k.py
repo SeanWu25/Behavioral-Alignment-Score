@@ -11,22 +11,26 @@ import pandas as pd
 from llm_client import LLMClient
 
 # Output
-OUTPUT_DIR = "output_simpleqa_colm"
+OUTPUT_DIR = "output_simpleqa_verbalize"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Numerical stability epsilon (same clamping as MedQA)
 EPS = 1e-4
 
-def get_model_response(client: LLMClient, question: str, deployment_name: str):
+def get_model_response(client: LLMClient, question: str, deployment_name: str, k: int = 3):
     question = str(question)
+    # Updated prompt to enforce Top-K distribution
     system_prompt = (
-        "You are a short-form question answering system.\n\n"
-        "Answer the question using ONLY the final answer.\n"
-        "The answer must be as short as possible (a word, number, or short phrase).\n\n"
+        f"You are a short-form question answering system.\n\n"
+        f"Provide your top {k} most likely answers to the question. "
+        f"For each answer, provide a confidence score (probability) between 0 and 1. "
+        f"The sum of all confidence scores must equal 1.0.\n\n"
+        "The answers must be as short as possible (a word, number, or short phrase).\n\n"
         "At the very end, provide your final output in this exact format:\n"
         "### FINAL DECISION\n"
-        "Answer: <short answer only>\n"
-        "Confidence: <number between 0 and 1>"
+        "1. Answer: <answer 1>, Confidence: <score 1>\n"
+        "2. Answer: <answer 2>, Confidence: <score 2>\n"
+        "..."
     )
 
     user_message = f"Question: {question}"
@@ -38,26 +42,36 @@ def get_model_response(client: LLMClient, question: str, deployment_name: str):
                 {"role": "user", "content": user_message}
             ],
             temperature=0.0,
-           # max_tokens=60
         )
 
         raw = completion.choices[0].message.content if hasattr(completion, "choices") else str(completion)
-        # Parse Confidence (last occurrence)
-      #  print(len(raw))
-        conf_matches = re.findall(r"Confidence:\s*([0-9]*\.?[0-9]+)", raw)
-        confidence = float(conf_matches[-1]) if conf_matches else 0.5
-        confidence = max(EPS, min(1 - EPS, confidence))
+        print(raw)
+        # Parse all Answer/Confidence pairs
+        # Matches patterns like "Answer: Paris, Confidence: 0.8"
+        pattern = r"Answer:\s*(.*?),\s*Confidence:\s*([0-9]*\.?[0-9]+)"
+        matches = re.findall(pattern, raw, re.IGNORECASE)
 
-        # Parse Answer
-        ans_matches = re.findall(r"Answer:\s*(.+)", raw, re.IGNORECASE)
-        answer = ans_matches[-1].strip() if ans_matches else raw.strip()
+        if matches:
+            # We take the FIRST match as the primary answer and its elicited confidence
+            # This maintains compatibility with your existing evaluation loop
+            answer = matches[0][0].strip()
+            confidence = float(matches[0][1])
+        else:
+            # Fallback if the model ignores the list format
+            conf_matches = re.findall(r"Confidence:\s*([0-9]*\.?[0-9]+)", raw)
+            ans_matches = re.findall(r"Answer:\s*(.+)", raw, re.IGNORECASE)
+            answer = ans_matches[-1].strip() if ans_matches else raw.strip()
+            confidence = float(conf_matches[-1]) if conf_matches else 0.5
+
+        # Numerical stability clamping (keeping your logic)
+        confidence = max(EPS, min(1 - EPS, confidence))
 
         return answer, confidence, raw
 
     except Exception as e:
         print(f"Error during inference: {e}")
         return f"__ERROR__: {e}", 0.0, str(e)
-
+        
 def calculate_per_example_bas(is_correct: bool, s: float) -> float:
     if is_correct:
         return s
@@ -245,7 +259,7 @@ def run_eval(model_name: str, deployment_name: str, input_csv: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run single-shot SimpleQA eval (MedQA style format)")
-    parser.add_argument("--input_csv", type=str, default="benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
+    parser.add_argument("--input_csv", type=str, default="/Users/seanwu/Desktop/BAS/benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
     parser.add_argument("--model_name", type=str, required=True, help="Model short name (used in output filenames)")
     parser.add_argument("--deployment_name", type=str, required=True, help="Deployment/model id for the LLM client")
     parser.add_argument("--provider", type=str, default="azure", choices=["azure", "custom", "openai", "anthropic_azure"], help="LLM provider to use")

@@ -11,53 +11,90 @@ import pandas as pd
 from llm_client import LLMClient
 
 # Output
-OUTPUT_DIR = "output_simpleqa_colm"
+OUTPUT_DIR = "output_simpleqa_top_k_reflect"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Numerical stability epsilon (same clamping as MedQA)
 EPS = 1e-4
 
-def get_model_response(client: LLMClient, question: str, deployment_name: str):
+def get_model_response(client: LLMClient, question: str, deployment_name: str, k: int = 3):
     question = str(question)
-    system_prompt = (
-        "You are a short-form question answering system.\n\n"
-        "Answer the question using ONLY the final answer.\n"
-        "The answer must be as short as possible (a word, number, or short phrase).\n\n"
-        "At the very end, provide your final output in this exact format:\n"
-        "### FINAL DECISION\n"
-        "Answer: <short answer only>\n"
-        "Confidence: <number between 0 and 1>"
+    
+    # --- STEP 1: CANDIDATE GENERATION ---
+    # We ask for the candidates first WITHOUT asking for confidence yet.
+    gen_system_prompt = (
+        f"You are a short-form question answering system.\n"
+        f"Provide exactly {k} distinct candidate answers to the question, "
+        f"ordered from most likely to least likely.\n"
+        f"Answers must be as short as possible (a word, number, or short phrase)."
     )
-
-    user_message = f"Question: {question}"
+    
     try:
-        completion = client.chat_completion(
+        gen_completion = client.chat_completion(
             model=deployment_name,
             messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_message}
+                {"role": "system", "content": gen_system_prompt},
+                {"role": "user", "content": f"Question: {question}"}
             ],
             temperature=0.0,
-           # max_tokens=60
+        )
+        candidates_raw = gen_completion.choices[0].message.content.strip() if hasattr(gen_completion, "choices") else str(gen_completion)
+
+        # --- STEP 2: PROBABILITY DISTRIBUTION REFLECTION ---
+        # Now we feed the candidates back and ask for the distribution.
+        reflect_system_prompt = (
+            f"You are an expert evaluator. Below is a question and {k} candidate answers.\n"
+            f"Assign a probability (between 0 and 1) to each answer based on how likely it is to be correct.\n"
+            f"The sum of all probabilities must equal 1.0.\n\n"
+            "Format your final output exactly as follows:\n"
+            "### FINAL DECISION\n"
+            "1. Answer: <answer 1>, Confidence: <score 1>\n"
+            "2. Answer: <answer 2>, Confidence: <score 2>\n"
+            "..."
+        )
+        
+        reflect_user_message = (
+            f"Question: {question}\n\n"
+            f"Candidate Answers:\n{candidates_raw}\n\n"
+            "Please evaluate these and provide the distribution."
         )
 
-        raw = completion.choices[0].message.content if hasattr(completion, "choices") else str(completion)
-        # Parse Confidence (last occurrence)
-      #  print(len(raw))
-        conf_matches = re.findall(r"Confidence:\s*([0-9]*\.?[0-9]+)", raw)
-        confidence = float(conf_matches[-1]) if conf_matches else 0.5
+        reflect_completion = client.chat_completion(
+            model=deployment_name,
+            messages=[
+                {"role": "system", "content": reflect_system_prompt},
+                {"role": "user", "content": reflect_user_message}
+            ],
+            temperature=0.0,
+        )
+        
+        reflect_raw = reflect_completion.choices[0].message.content if hasattr(reflect_completion, "choices") else str(reflect_completion)
+
+        # Parse the Top-1 Answer and Confidence for your evaluation script
+        pattern = r"Answer:\s*(.*?),\s*Confidence:\s*([0-9]*\.?[0-9]+)"
+        matches = re.findall(pattern, reflect_raw, re.IGNORECASE)
+
+        if matches:
+            # We take the first match (the top-ranked candidate)
+            answer = matches[0][0].strip()
+            confidence = float(matches[0][1])
+        else:
+            # Robust fallback
+            answer = candidates_raw.split('\n')[0].strip() # Take first candidate line
+            confidence = 0.5
+
+        # Numerical stability clamping
         confidence = max(EPS, min(1 - EPS, confidence))
 
-        # Parse Answer
-        ans_matches = re.findall(r"Answer:\s*(.+)", raw, re.IGNORECASE)
-        answer = ans_matches[-1].strip() if ans_matches else raw.strip()
+        # Combine raw outputs for logging
+        combined_raw = f"--- CANDIDATES ---\n{candidates_raw}\n\n--- REFLECTION ---\n{reflect_raw}"
 
-        return answer, confidence, raw
+        return answer, confidence, combined_raw
 
     except Exception as e:
-        print(f"Error during inference: {e}")
+        print(f"Error during 2-step Top-K reflection: {e}")
         return f"__ERROR__: {e}", 0.0, str(e)
-
+        
 def calculate_per_example_bas(is_correct: bool, s: float) -> float:
     if is_correct:
         return s
@@ -245,7 +282,7 @@ def run_eval(model_name: str, deployment_name: str, input_csv: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run single-shot SimpleQA eval (MedQA style format)")
-    parser.add_argument("--input_csv", type=str, default="benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
+    parser.add_argument("--input_csv", type=str, default="/Users/seanwu/Desktop/BAS/benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
     parser.add_argument("--model_name", type=str, required=True, help="Model short name (used in output filenames)")
     parser.add_argument("--deployment_name", type=str, required=True, help="Deployment/model id for the LLM client")
     parser.add_argument("--provider", type=str, default="azure", choices=["azure", "custom", "openai", "anthropic_azure"], help="LLM provider to use")

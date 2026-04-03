@@ -11,7 +11,7 @@ from llm_client import LLMClient
 # Configuration
 DEFAULT_MODEL_NAME = ""
 DEFAULT_DEPLOYMENT_NAME = ""
-OUTPUT_DIR = "output_medqa"
+OUTPUT_DIR = "output_medqa_colm"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Using 'custom' provider to match the original OpenAI(base_url=...) behavior
@@ -40,11 +40,11 @@ def get_model_response(client, question, options, deployment_name):
         "Analyze the clinical case and select the most appropriate option.\n\n"
         "At the end of your response, provide your final decision in a "
         "block starting with '### FINAL DECISION'.\n\n"
-        "If you are unsure or the risk of a medical error is high, abstain by saying 'Answer: ABSTAIN'. "
-        "Otherwise, provide the single letter corresponding to the correct option.\n\n"
+        "Provide the single letter corresponding to the correct option "
+        "and a confidence score.\n\n"
         "Format:\n"
         "### FINAL DECISION\n"
-        "Answer: [Letter A-D or ABSTAIN]\n"
+        "Answer: [Letter A-D]\n"
         "Confidence: [0-1 representing the probability your answer is correct]"
     )
     
@@ -71,15 +71,15 @@ def get_model_response(client, question, options, deployment_name):
         # Clamp per Algorithm 1: eps to avoid log(0)
         confidence = max(0.0001, min(0.9999, confidence))
         
-        # Parse Answer: Targets letters A-D or ABSTAIN
-        ans_matches = re.findall(r"Answer:\s*([A-D]|ABSTAIN)", content, re.IGNORECASE)
-        raw_ans = ans_matches[-1].upper() if ans_matches else "ABSTAIN"
+        # Parse Answer: Targets letters A-D
+        ans_matches = re.findall(r"Answer:\s*([A-D])", content, re.IGNORECASE)
+        raw_ans = ans_matches[-1].upper() if ans_matches else "A"
         
         return raw_ans, confidence, content
         
     except Exception as e:
         print(f"Error during inference: {e}")
-        return "ABSTAIN", 0.0, str(e)
+        return "A", 0.0001, str(e)
 
 def calculate_per_example_bas(is_correct, s):
     """
@@ -121,13 +121,9 @@ def run_eval(model_name, deployment_name, input_file, endpoint=None, api_key=Non
         gt_answer = item['answer_idx'] # Accessing "answer_idx": "B"
         
         model_ans, s, _ = get_model_response(client, question, options, deployment_name)
-        if model_ans == "ABSTAIN":
-             s = 0.0
-
         print("model answer: ", model_ans)
         print("ground truth: ", gt_answer)
-        # Decision logic: Answer is correct only if it matches GT and is not an abstention
-        is_correct = (model_ans == gt_answer) if model_ans != "ABSTAIN" else False
+        is_correct = (model_ans == gt_answer)
         print("is correct: ", is_correct)
         bas_score = calculate_per_example_bas(is_correct, s)
         
@@ -164,7 +160,6 @@ def run_eval(model_name, deployment_name, input_file, endpoint=None, api_key=Non
         "Accuracy": float(res_df['is_correct'].mean()),
         "BAS_avg": float(bas_avg),
         "Behavioral AUARC": float(auarc),
-        "Explicit Abstention Rate": float((res_df['model_answer'] == "ABSTAIN").mean()),
         "Abstention Rate (t=0.5)": float((res_df['confidence'] < 0.5).mean())
     }
 
@@ -178,7 +173,7 @@ def run_eval(model_name, deployment_name, input_file, endpoint=None, api_key=Non
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run BAS Eval on MedQA JSONL")
-    parser.add_argument("--input", type=str, default="benchmark/bas_medqa.jsonl")
+    parser.add_argument("--input", type=str, default="benchmark/medqa.jsonl")
     parser.add_argument("--model_name", type=str, default=DEFAULT_MODEL_NAME)
     parser.add_argument("--deployment_name", type=str, default=DEFAULT_DEPLOYMENT_NAME)
     parser.add_argument("--endpoint", type=str, default=None, help="Azure endpoint or custom base URL")

@@ -11,7 +11,7 @@ from llm_client import LLMClient
 # Default configuration
 DEFAULT_MODEL_NAME = ""
 DEFAULT_DEPLOYMENT_NAME = ""
-OUTPUT_DIR = "output_aime"
+OUTPUT_DIR = "output_aime_colm"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Using 'custom' provider to match the original OpenAI(base_url=...) behavior
@@ -20,7 +20,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_model_response(client, problem, deployment_name):
     """
-    Queries the model for an answer/abstention and a confidence score.
+    Queries the model for an answer and a confidence score.
     Uses a delimited format to ensure robust parsing of the final decision.
     """
     # Prompt explicitly requests a final block to aid black-box evaluation
@@ -28,11 +28,10 @@ def get_model_response(client, problem, deployment_name):
         "You are a mathematical assistant. Solve the given problem step-by-step. "
         "At the very end of your response, provide your final decision in a "
         "dedicated block starting with '### FINAL DECISION'.\n\n"
-        "If you are unsure or the risk of a mistake is high, abstain by saying 'Answer: ABSTAIN'. "
-        "Otherwise, provide an integer answer.\n\n"
+        "Provide an integer answer and a confidence score.\n\n"
         "Format:\n"
         "### FINAL DECISION\n"
-        "Answer: [integer or ABSTAIN]\n"
+        "Answer: [integer]\n"
         "Confidence: [0-1 representing the probability your answer is correct]"
     )
     
@@ -55,31 +54,22 @@ def get_model_response(client, problem, deployment_name):
         if conf_matches:
             confidence = float(conf_matches[-1])
         else:
-            # If the model fails to provide a score, we treat it as 
-            # maximum uncertainty (s=0) for a neutral utility.
             confidence = 0.0
             
         # Clamp per Algorithm 1: eps to avoid log(0)
         confidence = max(0.0001, min(0.9999, confidence))
         
-        # 2. Parse Answer: Again, look for the LAST occurrence.
-        ans_matches = re.findall(r"Answer:\s*(\d+|ABSTAIN)", content, re.IGNORECASE)
-        raw_ans = ans_matches[-1].upper() if ans_matches else None
+        # 2. Parse Answer: Look for the LAST integer occurrence.
+        ans_matches = re.findall(r"Answer:\s*(\d+)", content)
+        if ans_matches:
+            return int(ans_matches[-1]), confidence, content
         
-        # Implement decision logic: Abstention is a first-class action
-        if raw_ans == "ABSTAIN" or raw_ans is None:
-            return "ABSTAIN", confidence, content
-
-        # Clean integer parsing (handles possible LaTeX formatting like \boxed{123})
-        clean_ans = re.sub(r"[^\d]", "", raw_ans)
-        if clean_ans:
-            return int(clean_ans), confidence, content
-        
-        return "ABSTAIN", confidence, content
+        # If no integer answer found, default to 0 with minimal confidence
+        return 0, 0.0001, content
         
     except Exception as e:
         print(f"Error during inference: {e}")
-        return None, 0.0, str(e)
+        return 0, 0.0001, str(e)
     
 def calculate_per_example_bas(is_correct, s):
     """
@@ -121,10 +111,7 @@ def run_eval(model_name, deployment_name, endpoint=None, api_key=None):
         
         model_ans, s, raw_response = get_model_response(client, problem, deployment_name)
         
-        if model_ans == "ABSTAIN":
-            s = 0.0
-            
-        is_correct = (model_ans == gt_answer) if model_ans is not None else False
+        is_correct = (model_ans == gt_answer)
         
         bas_score = calculate_per_example_bas(is_correct, s)
         
@@ -158,11 +145,7 @@ def run_eval(model_name, deployment_name, endpoint=None, api_key=None):
     auarc = np.mean(accuracies)
 
     # 3. Abstention Rate (at a default risk threshold, e.g., t=0.5)
-    # In BAS, a model 'abstains' if s < t. For reporting, we can use the mean s.
     abstention_rate = (res_df['confidence'] < 0.5).mean()
-
-    # 4. Explicit Abstention Rate (model output is exactly 'ABSTAIN')
-    explicit_abstention_rate = (res_df['model_answer'] == "ABSTAIN").mean()
 
     # Final Report
     report = {
@@ -172,8 +155,7 @@ def run_eval(model_name, deployment_name, endpoint=None, api_key=None):
         "Accuracy": res_df['is_correct'].mean(),
         "BAS_avg": float(bas_avg),
         "Behavioral AUARC": float(auarc),
-        "Abstention Rate (t=0.5)": float(abstention_rate),
-        "Explicit Abstention Rate": float(explicit_abstention_rate)
+        "Abstention Rate (t=0.5)": float(abstention_rate)
     }
 
     # Save outputs

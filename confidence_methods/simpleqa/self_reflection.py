@@ -11,7 +11,7 @@ import pandas as pd
 from llm_client import LLMClient
 
 # Output
-OUTPUT_DIR = "output_simpleqa_colm"
+OUTPUT_DIR = "output_simpleqa_reflect"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Numerical stability epsilon (same clamping as MedQA)
@@ -19,45 +19,68 @@ EPS = 1e-4
 
 def get_model_response(client: LLMClient, question: str, deployment_name: str):
     question = str(question)
-    system_prompt = (
-        "You are a short-form question answering system.\n\n"
+    
+    # --- STEP 1: GENERATION ---
+    gen_system_prompt = (
+        "You are a short-form question answering system.\n"
         "Answer the question using ONLY the final answer.\n"
-        "The answer must be as short as possible (a word, number, or short phrase).\n\n"
-        "At the very end, provide your final output in this exact format:\n"
-        "### FINAL DECISION\n"
-        "Answer: <short answer only>\n"
-        "Confidence: <number between 0 and 1>"
+        "The answer must be as short as possible (a word, number, or short phrase)."
     )
-
-    user_message = f"Question: {question}"
+    
     try:
-        completion = client.chat_completion(
+        # Initial call to get the answer
+        gen_completion = client.chat_completion(
             model=deployment_name,
             messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_message}
+                {"role": "system", "content": gen_system_prompt},
+                {"role": "user", "content": f"Question: {question}"}
             ],
             temperature=0.0,
-           # max_tokens=60
+        )
+        model_ans = gen_completion.choices[0].message.content.strip() if hasattr(gen_completion, "choices") else str(gen_completion)
+
+        # --- STEP 2: REFLECTION (The Confidence Step) ---
+        reflect_system_prompt = (
+            "You are an expert evaluator. Given a question and a proposed answer, "
+            "assess the probability that the answer is factually correct.\n\n"
+            "Provide your confidence as a single number between 0 and 1.\n"
+            "Format your output exactly as:\n"
+            "Confidence: <number>"
+        )
+        
+        reflect_user_message = (
+            f"Question: {question}\n"
+            f"Proposed Answer: {model_ans}\n\n"
+            "Is this answer correct? Provide your confidence score."
         )
 
-        raw = completion.choices[0].message.content if hasattr(completion, "choices") else str(completion)
-        # Parse Confidence (last occurrence)
-      #  print(len(raw))
-        conf_matches = re.findall(r"Confidence:\s*([0-9]*\.?[0-9]+)", raw)
+        reflect_completion = client.chat_completion(
+            model=deployment_name,
+            messages=[
+                {"role": "system", "content": reflect_system_prompt},
+                {"role": "user", "content": reflect_user_message}
+            ],
+            temperature=0.0,
+        )
+        
+        reflect_raw = reflect_completion.choices[0].message.content if hasattr(reflect_completion, "choices") else str(reflect_completion)
+
+        # Parse Confidence from the reflection step
+        conf_matches = re.findall(r"Confidence:\s*([0-9]*\.?[0-9]+)", reflect_raw)
         confidence = float(conf_matches[-1]) if conf_matches else 0.5
+        
+        # Numerical stability clamping
         confidence = max(EPS, min(1 - EPS, confidence))
 
-        # Parse Answer
-        ans_matches = re.findall(r"Answer:\s*(.+)", raw, re.IGNORECASE)
-        answer = ans_matches[-1].strip() if ans_matches else raw.strip()
+        # Combine raw outputs for your logs
+        combined_raw = f"--- GENERATION ---\n{model_ans}\n\n--- REFLECTION ---\n{reflect_raw}"
 
-        return answer, confidence, raw
+        return model_ans, confidence, combined_raw
 
     except Exception as e:
-        print(f"Error during inference: {e}")
+        print(f"Error during self-reflection: {e}")
         return f"__ERROR__: {e}", 0.0, str(e)
-
+        
 def calculate_per_example_bas(is_correct: bool, s: float) -> float:
     if is_correct:
         return s
@@ -245,7 +268,7 @@ def run_eval(model_name: str, deployment_name: str, input_csv: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run single-shot SimpleQA eval (MedQA style format)")
-    parser.add_argument("--input_csv", type=str, default="benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
+    parser.add_argument("--input_csv", type=str, default="/Users/seanwu/Desktop/BAS/benchmark/simple_qa_test.csv", help="CSV with columns 'problem' and 'answer'")
     parser.add_argument("--model_name", type=str, required=True, help="Model short name (used in output filenames)")
     parser.add_argument("--deployment_name", type=str, required=True, help="Deployment/model id for the LLM client")
     parser.add_argument("--provider", type=str, default="azure", choices=["azure", "custom", "openai", "anthropic_azure"], help="LLM provider to use")
