@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/preprint-work%20in%20progress-orange?style=flat-square" />
+<img src="https://img.shields.io/badge/preprint-under%20review-orange?style=flat-square" />
 <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square" />
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
 
@@ -36,36 +36,41 @@ BAS ∈ (-∞, 1]    higher is better    BAS = 1 means perfectly calibrated + al
 
 ---
 
-## 🚀 Quick Start
-
-### Installation
-
-```bash
-pip install bas-eval
-```
-
-### Basic Usage
+## ⚡ Quick Start
 
 ```python
 import pandas as pd
+import numpy as np
 from bas_eval import bas_score, BASReport
 
-# Load your model results
-# Dataset should contain 'is_correct' (bool) and 'confidence' (float [0,1])
-df = pd.read_csv("model_results.csv")
+# Load a CSV with 'is_correct' (bool) and 'confidence' (0–1) columns
+df = pd.read_csv("example_output.csv")
 
-# Compute standard BAS (uniform risk prior)
-score = bas_score(df['is_correct'], df['confidence'])
-print(f"Mean BAS: {score:.4f}")
+# Per-example BAS scores (uniform prior)
+scores = bas_score(df['is_correct'], df['confidence'])
+print(f"Mean BAS: {np.mean(scores):.4f}")
 
-# Generate a full Alignment Report
-# Automatically computes Uniform, Linear, and Quadratic risk profiles
+# Full report across all risk priors
 report = BASReport(df['is_correct'], df['confidence'])
 report.print_summary()
 
-# Safety-critical BAS (penalizes high-confidence hallucinations more severely)
-safety_score = report.weighted_score(prior='quadratic')
-print(f"Safety-Critical BAS (w(t)=3t²): {safety_score:.4f}")
+# Safety-critical weighted score
+safety = report.weighted_score(prior='quadratic')
+print(f"Safety-Critical BAS: {safety:.4f}")
+```
+
+**Output:**
+
+```
+=============================================
+          BAS ALIGNMENT REPORT
+=============================================
+Risk Profile              |     Mean BAS
+---------------------------------------------
+Uniform (Standard)        |       0.XXXX
+Linear (Risk-Aware)       |       0.XXXX
+Quadratic (Safety)        |       0.XXXX
+=============================================
 ```
 
 ---
@@ -196,21 +201,68 @@ Crucially, **truthfulness is optimal under any weighting** (Theorem B.1) — the
 
 ---
 
-## 🗂 Repository Structure
+## 🗂 Project Structure
 
 ```
-├── bas_eval/               # Core library
+Behavioral_Alignment_Score/
+├── bas_eval/                   # Core package (pip-installable)
 │   ├── __init__.py
-│   ├── score.py            # BAS computation (Eq. 4 & 5)
-│   ├── report.py           # BASReport with weighted variants
-│   └── calibration.py      # Post-hoc isotonic regression
-├── benchmarks/             # Evaluation scripts
-│   ├── aime.py
-│   ├── medqa.py
-│   └── simpleqa.py
-├── prompts/                # Elicitation prompt templates
-├── notebooks/              # Reproducing paper figures
-└── data/                   # Sample data
+│   ├── metrics.py              # bas_score() — Eq. 4/6 from the paper
+│   └── report.py               # BASReport class — summary across risk priors
+├── benchmark/                  # Bundled benchmark datasets
+│   ├── simple_qa_test.csv
+│   ├── aime_2024_2025.csv
+│   └── bas_medqa.jsonl
+├── simpleqa.py                 # SimpleQA evaluation pipeline (w/ LLM judge)
+├── aime.py                     # AIME 2024/25 evaluation pipeline
+├── medqa.py                    # MedQA (USMLE) evaluation pipeline
+├── llm_client.py               # Multi-provider LLM client
+├── weighted_bas.py             # Risk-prior sensitivity analysis + LaTeX output
+├── calibrate_confdience.py     # Isotonic calibration pipeline
+├── example_usage.py            # Quick-start example
+├── example_output.csv          # Sample results for example_usage.py
+├── setup.py                    # Package installer
+└── LICENSE                     # MIT License
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SeanWu25/Behavioral-Alignment-Score.git
+cd Behavioral-Alignment-Score
+```
+
+### 2. Create a virtual environment (recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+# venv\Scripts\activate    # Windows
+```
+
+### 3. Install dependencies
+
+```bash
+pip install numpy pandas scikit-learn openai anthropic
+```
+
+### 4. Install the `bas_eval` package
+
+```bash
+pip install -e .
+```
+
+### 5. Configure API keys (for benchmark evaluation)
+
+Create a `.env` file or export environment variables:
+
+```bash
+export AZURE_OPENAI_API_KEY="your-key-here"
+export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
 ```
 
 ---
