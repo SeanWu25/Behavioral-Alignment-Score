@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/preprint-under%20review-orange?style=flat-square" />
+<img src="https://img.shields.io/badge/preprint-work%20in%20progress-orange?style=flat-square" />
 <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square" />
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
 
-# ![BAS Logo](BAS.png) BAS: Behavioral Alignment Score BAS: Behavioral Alignment Score
+# 🏆 BAS: Behavioral Alignment Score
 
 ### A Decision-Theoretic Approach to Evaluating Large Language Model Confidence
 
@@ -12,7 +12,7 @@
 
 *Department of Engineering Science, University of Oxford*
 
-[\[📄 Paper\]](https://arxiv.org/abs/XXXX.XXXXX) 
+[\[📄 Paper\]](https://arxiv.org/abs/XXXX.XXXXX) &nbsp;|&nbsp; [\[🤗 Models\]](#models) &nbsp;|&nbsp; [\[📊 Benchmark\]](#benchmark-results) &nbsp;|&nbsp; [\[🐍 Install\]](#installation)
 
 </div>
 
@@ -229,14 +229,28 @@ Behavioral_Alignment_Score/
 
 ## 🚀 Installation
 
-### 1. Clone the repository
+### Option A — Install `bas_eval` directly (metric only)
+
+If you just want to compute BAS on your own model outputs:
+
+```bash
+pip install git+https://github.com/SeanWu25/Behavioral-Alignment-Score.git
+```
+
+This installs the `bas_eval` package (requires `numpy` and `pandas`) with no other setup needed.
+
+---
+
+### Option B — Full installation (benchmarks + evaluation pipelines)
+
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/SeanWu25/Behavioral-Alignment-Score.git
 cd Behavioral-Alignment-Score
 ```
 
-### 2. Create a virtual environment (recommended)
+#### 2. Create a virtual environment (recommended)
 
 ```bash
 python -m venv venv
@@ -244,19 +258,19 @@ source venv/bin/activate   # macOS / Linux
 # venv\Scripts\activate    # Windows
 ```
 
-### 3. Install dependencies
+#### 3. Install dependencies
 
 ```bash
 pip install numpy pandas scikit-learn openai anthropic
 ```
 
-### 4. Install the `bas_eval` package
+#### 4. Install the `bas_eval` package
 
 ```bash
 pip install -e .
 ```
 
-### 5. Configure API keys (for benchmark evaluation)
+#### 5. Configure API keys (for benchmark evaluation)
 
 Create a `.env` file or export environment variables:
 
