@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/preprint-work%20in%20progress-orange?style=flat-square" />
+<img src="https://img.shields.io/badge/preprint-under%20review-orange?style=flat-square" />
 <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square" />
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
 
