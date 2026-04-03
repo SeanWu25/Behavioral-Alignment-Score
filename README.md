@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square" />
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
 
-# 🏆 BAS: Behavioral Alignment Score
+# ![BAS Logo](BAS.png) BAS: Behavioral Alignment Score BAS: Behavioral Alignment Score
 
 ### A Decision-Theoretic Approach to Evaluating Large Language Model Confidence
 
