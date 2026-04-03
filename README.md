@@ -12,7 +12,7 @@
 
 *Department of Engineering Science, University of Oxford*
 
-[\[📄 Paper\]](https://arxiv.org/abs/XXXX.XXXXX) &nbsp;|&nbsp; [\[🤗 Models\]](#models) &nbsp;|&nbsp; [\[📊 Benchmark\]](#benchmark-results) &nbsp;|&nbsp; [\[🐍 Install\]](#installation)
+[\[📄 Paper\]](https://arxiv.org/abs/XXXX.XXXXX) 
 
 </div>
 
