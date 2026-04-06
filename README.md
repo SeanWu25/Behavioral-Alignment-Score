@@ -12,7 +12,7 @@
 
 *Department of Engineering Science, University of Oxford*
 
-[\[📄 Paper\]](https://arxiv.org/abs/XXXX.XXXXX) 
+[\[📄 Paper\]]([https://arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/pdf/2604.03216)) 
 </div>
 
 ---
