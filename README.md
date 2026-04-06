@@ -285,12 +285,14 @@ export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
 If you find BAS useful in your research, please cite:
 
 ```bibtex
-@article{wu2025bas,
-  title     = {BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence},
-  author    = {Wu, Sean and Gustafsson, Fredrik K. and Phillips, Edward and Gao, Boyan and Thakur, Anshul and Clifton, David A.},
-  journal   = {arXiv preprint},
-  year      = {2025},
-  url       = {https://github.com/SeanWu25/Behavioral-Alignment-Score}
+@misc{wu2026basdecisiontheoreticapproachevaluating,
+      title={BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence}, 
+      author={Sean Wu and Fredrik K. Gustafsson and Edward Phillips and Boyan Gao and Anshul Thakur and David A. Clifton},
+      year={2026},
+      eprint={2604.03216},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.03216}, 
 }
 ```
 
