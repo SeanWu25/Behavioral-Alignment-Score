@@ -35,6 +35,59 @@ BAS ∈ (-∞, 1]    higher is better    BAS = 1 means perfectly calibrated + al
 
 ---
 
+## 🚀 Installation
+
+### Option A — Install `bas_eval` directly (metric only)
+
+If you just want to compute BAS on your own model outputs:
+
+```bash
+pip install git+https://github.com/SeanWu25/Behavioral-Alignment-Score.git
+```
+
+This installs the `bas_eval` package (requires `numpy` and `pandas`) with no other setup needed.
+
+---
+
+### Option B — Full installation (benchmarks + evaluation pipelines)
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/SeanWu25/Behavioral-Alignment-Score.git
+cd Behavioral-Alignment-Score
+```
+
+#### 2. Create a virtual environment (recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+# venv\Scripts\activate    # Windows
+```
+
+#### 3. Install dependencies
+
+```bash
+pip install numpy pandas scikit-learn openai anthropic
+```
+
+#### 4. Install the `bas_eval` package
+
+```bash
+pip install -e .
+```
+
+#### 5. Configure API keys (for benchmark evaluation)
+
+Create a `.env` file or export environment variables:
+
+```bash
+export AZURE_OPENAI_API_KEY="your-key-here"
+export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
+```
+
+---
 ## ⚡ Quick Start
 
 ```python
@@ -226,59 +279,6 @@ Behavioral_Alignment_Score/
 
 ---
 
-## 🚀 Installation
-
-### Option A — Install `bas_eval` directly (metric only)
-
-If you just want to compute BAS on your own model outputs:
-
-```bash
-pip install git+https://github.com/SeanWu25/Behavioral-Alignment-Score.git
-```
-
-This installs the `bas_eval` package (requires `numpy` and `pandas`) with no other setup needed.
-
----
-
-### Option B — Full installation (benchmarks + evaluation pipelines)
-
-#### 1. Clone the repository
-
-```bash
-git clone https://github.com/SeanWu25/Behavioral-Alignment-Score.git
-cd Behavioral-Alignment-Score
-```
-
-#### 2. Create a virtual environment (recommended)
-
-```bash
-python -m venv venv
-source venv/bin/activate   # macOS / Linux
-# venv\Scripts\activate    # Windows
-```
-
-#### 3. Install dependencies
-
-```bash
-pip install numpy pandas scikit-learn openai anthropic
-```
-
-#### 4. Install the `bas_eval` package
-
-```bash
-pip install -e .
-```
-
-#### 5. Configure API keys (for benchmark evaluation)
-
-Create a `.env` file or export environment variables:
-
-```bash
-export AZURE_OPENAI_API_KEY="your-key-here"
-export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
-```
-
----
 
 ## 📖 Citation
 
